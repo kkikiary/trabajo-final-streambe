@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro y Perfiles de Profesionales - CATARSIS</title>
+    <link rel="stylesheet" href="stylepag.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">CATARSIS</a></h1>
+        <nav id="nav"></nav>
+    </header>
+
+<section id="writing-space" class="container">
+    <h2>Escribe sobre lo que quieras</h2>
+    <form action="submit-post.php" method="post">
+        <div class="form-group">
+            <label for="user-name">Titulo</label>
+            <input type="text" id="user-name" name="user-name" required>
+        </div>
+        <div class="form-group">
+            <label for="user-message">Escribe tu mensaje:</label>
+            <textarea id="user-message" name="user-message" rows="10" placeholder="Escribe aquí tu mensaje..." required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</body>
+</html>
