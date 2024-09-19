@@ -15,10 +15,10 @@ if (isset($_POST['nombre']) && isset($_POST['contraseña'])) {
     $contraseña = validate($_POST['contraseña']);
 
     if (empty($nombre)) {
-        header("Location: login.php?error=El%20nombre%20es%20requerido");
+        header("Location: inicio.php.php?error=El%20nombre%20es%20requerido");
         exit();
     } elseif (empty($contraseña)) {
-        header("Location: login.php?error=La%20Contraseña%20es%20requerida");
+        header("Location: inicio.php.php?error=La%20Contraseña%20es%20requerida");
         exit();
     } else {
         
@@ -35,19 +35,19 @@ if (isset($_POST['nombre']) && isset($_POST['contraseña'])) {
             if (password_verify($contraseña, $row['contraseña'])) {
                 $_SESSION['nombre'] = $row['nombre'];
                 $_SESSION['id'] = $row['id'];
-                header("Location: ../menu_principal.html"); 
+                header("Location: foro.html"); 
                 exit();
             } else {
-                header("Location: login.php?error=El%20nombre%20o%20la%20contraseña%20son%20incorrectas");
+                header("Location: inicio.php.php?error=El%20nombre%20o%20la%20contraseña%20son%20incorrectas");
                 exit();
             }
         } else {
-            header("Location: login.php?error=El%20nombre%20o%20la%20contraseña%20son%20incorrectas");
+            header("Location: inicio.php.php?error=El%20nombre%20o%20la%20contraseña%20son%20incorrectas");
             exit();
         }
     }
 } else {
-    header("Location: login.php?error=El%20nombre%20o%20la%20contraseña%20son%20incorrectas");
+    header("Location: inicio.php.php?error=El%20nombre%20o%20la%20contraseña%20son%20incorrectas");
     exit();
 }
 ?>

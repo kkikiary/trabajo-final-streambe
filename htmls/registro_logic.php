@@ -8,13 +8,13 @@ function validar($data) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = validar($_POST['nombre']);
-    $correo = validar($_POST['correo']);
+    // $correo = validar($_POST['correo']);
     $contraseña = password_hash(validar($_POST['contraseña']), PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO registro (nombre, correo, contraseña) VALUES ('$nombre', '$correo', '$contraseña')";
+    $sql = "INSERT INTO registro (nombre, contraseña) VALUES ('$nombre', '$contraseña')";
     if (mysqli_query($conexion, $sql)) {
         $_SESSION['id'] = mysqli_insert_id($conexion);
-        header('Location: registro.php');
+        header('Location: inicio.php');
         exit();
     }
 }
