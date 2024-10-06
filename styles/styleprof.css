@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sección del perfil */
+.professional-profile {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Perfil individual */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.profile:last-child {
+    border-bottom: none;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.profile h3 {
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+.profile p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.profile strong {
+    color: #4CAF50;
+}
+
+/* Testimonios */
+.testimonial {
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Enlaces */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+}

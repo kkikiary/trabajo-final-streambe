@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATARSIS - Escribir</title>
+      <link rel="stylesheet" href="../styles/stylepag.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">CATARSIS</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="pagina.php">Atrás</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="writing-space" class="container">
+        <h2>Escribe sobre lo que quieras</h2>
+
+        <!-- Verificamos que id_categoria esté disponible en la URL -->
+        <?php if (isset($_GET['id_categoria'])): ?>
+        <form action="../foro/submit-post.php" method="post">
+            <!-- Campo oculto con id_categoria -->
+            <input type="hidden" name="id_categoria" value="<?php echo $_GET['id_categoria']; ?>">
+
+            <div class="form-group">
+                <label for="user-message">Escribe tu mensaje:</label>
+                <textarea id="user-message" name="user-message" rows="10" placeholder="Escribe aquí tu mensaje..." required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <?php else: ?>
+            <p>Error: No se ha especificado una categoría.</p>
+        <?php endif; ?>
+    </section>
+</body>
+</html>
