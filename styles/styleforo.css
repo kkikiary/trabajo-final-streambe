@@ -1,14 +1,14 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f4eef9;
     margin: 0;
     padding: 0;
 }
 
 /* Header */
 header {
-    background: #007bff;
+    background: #b99ad6;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -16,6 +16,17 @@ header {
 
 header h1 {
     margin: 0;
+    color: #f4eef9;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 40px;
+
+}
+
+h2 {
+    margin: 0;
+    color: #b99ad6;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 30px;
 }
 
 header a {
@@ -30,7 +41,7 @@ header a {
 
 /* Post */
 .post {
-    background: #fff;
+    background: #dfcaf3;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -89,4 +100,20 @@ header a {
 
 .response-form button:hover {
     background-color: #0056b3;
+}
+
+a {
+    font-size: 30px;
+    color: #f4eef9;
+}
+
+textarea {
+    width: 80%;
+}
+
+button {
+    color: #f4eef9;
+    background-color: #b99ad6;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 15px;
 }
