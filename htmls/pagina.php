@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.html">CATARSIS</a></h1>
+        <a href="index.html"> <img src="LETRACATARSIS.png" class="image featured"/> </a>
         <nav id="nav">
             <ul>
                 <li><a href="temas.php">TEMAS</a></li>
