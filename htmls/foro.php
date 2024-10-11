@@ -54,7 +54,7 @@ if ($result_publicaciones->num_rows > 0) {
     <h1>Foro Dinámico</h1>
     <nav id="nav">
         <ul>
-            <li><a href="../htmls/pagina.php">Atrás</a></li> <!-- Botón de 'Atrás' -->
+            <a href="../htmls/pagina.php"> ⭠ </a> <!-- Botón de 'Atrás' -->
         </ul>
     </nav>
 </header>
@@ -137,3 +137,4 @@ $conn->close();
 
 </body>
 </html>
+
