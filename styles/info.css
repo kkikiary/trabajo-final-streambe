@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfcaf3;
+}
+
+h1 {
+    font-size: 50px;
+    color: #b99ad6;
+}
+
+h3 {
+    color:#723185;
+}
+
+p {
+    color: #555;
+}
+
+li {
+    color: #555;
+}
+
+/* Estilos para el header */
+header {
+    background: #b99ad6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.flecha {
+    font-size: 40px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+}
+
+.img {
+    width: 200px;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+header h1 {
+    text-align: center;
+    flex-grow: 1; 
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* 2. Estilos del formulario de registro */
+section {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* 3. Estilos del formulario de inicio de sesión */
+div {
+    max-width: 80%;
+    margin: 50px auto;
+    background-color: #f4eef9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+    div h1 {
+        text-align: center;
+        font-family: 'Century Gothic', sans-serif;
+    }
